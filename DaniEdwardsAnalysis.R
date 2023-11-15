@@ -24,3 +24,15 @@ t.testQ4 <- t.test(data$PreQ4, data$PostQ4, paired = TRUE)
 t.testQ4
 .1411*4 = .5644
 
+# means of pre survey questions
+no_na_data <- na.omit(data)
+meanpreq1 <- mean(no_na_data$PreQ1)
+meanpreq2 <- mean(no_na_data$PreQ2)
+meanpreq3 <- mean(no_na_data$PreQ3)
+meanpreq4 <- mean(no_na_data$PreQ4)
+
+# means of post survey questions
+meanpostQ1 <- mean(data$PostQ1)
+meanpostQ2 <- mean(data$PostQ2)
+meanpostQ3 <- mean(data$PostQ3)
+meanpostQ4 <- mean(data$PostQ4)
